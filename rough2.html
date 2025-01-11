@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .right ul li:hover {
+            color: #e2a31b;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 32px;
+            text-align: center;
+        }
+
+        .first span {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .first img {
+            width: 22px;
+            margin-left: 10px;
+        }
+
+        .first p {
+            font-size: 17px;
+            width: 44vw;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .first button {
+            background-color: #e2a31b;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .first button:hover {
+            background-color: #d3930a;
+        }
+
+        .second {
+            max-width: 70vw;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .download {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .download img {
+            width: 45px;
+        }
+
+        .small {
+            font-size: 15px;
+            color: #777;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            padding: 20px;
+            background: #e3dddd;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-lang {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .btn {
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn.blue {
+            background-color: rgb(1, 151, 238);
+        }
+
+        .btn.blue:hover {
+            background-color: rgb(2, 131, 206);
+        }
+
+        .btn.green {
+            background-color: rgb(30, 179, 0);
+        }
+
+        .btn.green:hover {
+            background-color: rgb(27, 158, 1);
+        }
+
+        @media screen and (max-width: 777px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .first p {
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="pic/UE-Logo-1.webp" alt="logo"></div>
+            <div class="right">
+                <ul>
+                    <li> <span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                            height="16" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li> <span>Pricing</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                            height="16" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li> <span>Resources</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                            height="16" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li> <span>About Us</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                            height="16" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="pic/Lang.png" alt="png"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <span>Download UltraEdit for Windows Reviews
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/All_bootstrap_icon_with_black-1-1.png"
+                    alt="img"></span>
+            <p>Download and try <b>UltraEdit</b> before you buy it! This download includes the full Windows version of
+                the text editor.</p>
+
+            <div><button>DOWNLOAD MAC OR LINUX VERSION</button></div>
+        </section>
+        <section class="second">
+            <div class="flex">
+                <span class="download">
+                    <img src="pic/image-3-1.png" alt="">Download UltraEdit
+                    <span class="small">V202X.1 (released XX/XX/XXXX) | hotfix</span></span>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">English</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">한국인</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">日本語</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">हिन्दी</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">русский</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">中国人</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">عربي</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">اردو</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">française</div>
+                    <button class="btn blue"> <a href="">Download 32-bit</a></button>
+                    <button class="btn green"><a href="">Download 64-bit</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
